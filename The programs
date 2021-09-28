@@ -1,0 +1,46 @@
+1.数字计算
+#include<iostream>
+int main()
+{
+  using namespace std;
+   
+   cout << "Enter num1:";
+   cin << num1;
+   cout << "Enter num2";
+   cin << num2;
+   cout << num1 << "+" << num2 << "=" << num1+num2 << endl;
+   cout << num1 << "-" << num2 << "=" << num1-num2 << endl;
+   cout << num1 << "*" << num2 << "=" << num1*num2 << endl;
+   cout << num1 << "/" << num2 << "=" << fixed << setprecision(2) << num1/num2 << endl;
+
+  return 0;           
+}
+
+2.鸡兔同笼（求解二元一次方程）
+#include<iostream>
+#include<cstdio>
+int main()
+{
+   using namespace std;
+        int a,b,c,d;
+        c = 35
+        d = 94
+        a = (d/2-c)
+        b = (2c-d/2)
+    cout << a << " " << b << endl;
+    
+   return 0;
+}
+3cout 和 变量
+#include<iostream>
+int main()
+{
+   using namespace std;
+       int carrots;
+       carrots = 25
+       cout << "l have " << carrots << "carrots" <<endl;
+       carrots = carrots - 1
+       cout << "crunch,crunch,now l only have " << carrots << "carrots" <<endl;
+        
+    return 0;
+}
