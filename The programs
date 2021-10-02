@@ -31,7 +31,7 @@ int main()
     
    return 0;
 }
-3cout 和 变量
+3.cout 和 变量
 #include<iostream>
 int main()
 {
@@ -44,3 +44,25 @@ int main()
         
     return 0;
 }
+4.计算平方根
+#include<iostream>
+#include<cmath>
+int main
+{
+  using namespace std;
+  
+  double area;
+  cout << "Enter the floor area,in the square feet,of your house." << endl;
+  cin >> area;
+  double side;
+  side = sqrt(area);
+  cout << "That's the equivalent of a square " << side <<" feet to the sides." << endl;
+  cout << "How fascinating!" << endl;
+   return 0;
+} 
+5. 定义无返回值的函数
+#include<iostream>
+6.定义有返回值的函数
+
+
+
