@@ -60,9 +60,116 @@ int main
   cout << "How fascinating!" << endl;
    return 0;
 } 
-5. 定义无返回值的函数
+c++2.7编程练习
+t2：
 #include<iostream>
-6.定义有返回值的函数
+using namespace std;
+int main()
+{
+	int number;
+	cout << "Enter a number in longs." << endl;
+	cin >> number;
+	int ma;
+	ma = number / 220;
+	cout << number << " longs" << "=" << ma << " ma " << endl;
+	return 0;
+}
+t3：
+#include<iostream>
+using namespace std;
+void frist(void);
+void second(void);
+int main()
+{
+	frist();
+	frist();
+	second();
+	second();
+	
+	return 0;
+}
+
+void frist()
+{
+	cout << "Three blind mice" << endl;
+}
+void second()
+{
+	cout << "See how they run" << endl;
+}
+t4:
+#include<iostream>
+using namespace std;
+int main()
+{
+	int age;
+	cout << "Enter your age: " << endl;
+	cin >> age;
+	cout << "you are " << age << " years old,equals " << age*12 << " mouths." << endl;
+	return 0;
+}
+t5:
+#include<iostream>
+double tem(double);
+using namespace std;
+int main()
+{
+	double she;
+	cout << "please enter a celsius valus: " << endl;
+	cin >> she;
+	double hua;
+	hua = tem(she)
+	cout << she << " degress Celsius is " << hua << " degress Fahrenheit." << endl;
+	
+	return 0;
+}
+double tem(double n)
+{
+	double a;
+	a = n*1.8 + 32.0;
+	return a;
+}
+t6:
+#include<iostream>
+using namespace std;
+double gn(double);
+int main()
+{
+	double chang;
+	cout << "Enter the number of light years: " << endl;
+	cin >> chang;
+	double twdw;
+	twdw = gn(chang);
+	cout << chang << " light years " << "=" << twdw << " astronomical units." ;
+	return 0;
+}
+double gn(double a)
+{
+	double b;
+	b = a*63240;
+	return b;
+}
+t7:
+#include<iostream>
+void time(int,int);
+using namespace std;
+int main()
+{
+	int hours;
+	int minutes;
+	cout << "Enter the number of hours: " << endl;
+	cin >> hours;
+	cout << "Enter the number of minutes: " << endl;
+	cin >> minutes;
+	time(hours,minutes);
+	return 0; 
+}
+void time(int a,int b)
+{
+	cout << "time: " << a << ":" << b << endl;
+}
+
+
 
 
 
