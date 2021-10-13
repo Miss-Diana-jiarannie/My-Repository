@@ -202,6 +202,61 @@ int main()
 		cout << "很遗憾，您未能考上大学" << endl;
 	return 0;
 }
+判断最重的小猪
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout << "请输入abc三只小猪的体重" << endl;
+	cin >> a >> b >> c;
+	if(a>b)
+	{
+		if(a>c)
+		{
+			cout << "a是最重的" << endl; 
+		}
+		else if(a<c)
+		{
+			cout << "c是最重的" << endl; 
+		}
+		else if(a=c)
+		{
+			cout << "a和c都是最重的" << endl; 
+		}
+	 } 
+	 else if(a<b)
+	 {
+	 	if(b<c)
+	 	{
+	 		cout << "c是最重的" << endl;
+		 }
+		 else if(b>c)
+		 {
+		 	cout << "b是最重的" << endl;
+		 }
+		 else if(b=c)
+		 {
+		 	cout << "b和c都是最重的" << endl; 
+		 }
+	 }
+	 else if(a=b)
+	 {
+	 	if(a>c)
+	 	{
+	 		cout << "a和b都是最重的" << endl;
+		 }
+		 else if(a<c)
+		 {
+		 	cout << "c是最重的" << endl; 
+		 }
+		 else if(a=c)
+		 {
+		 	cout << "三只小猪一样重" << endl;
+                 }
+	 }
+	 return 0；
+}
 
 
 
