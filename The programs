@@ -168,7 +168,40 @@ void time(int a,int b)
 {
 	cout << "time: " << a << ":" << b << endl;
 }
+判断是否考上大学
+#include<iostream>
+using namespace std;
+int main()
+{
+	int score=0;
+	cout << "请输入您的高考成绩： " << endl;
+	cin >> score;
+	if (score > 600)
+	{
+		if (score > 700)
+		{
+			cout << "恭喜您考入清华大学" << endl;
+			cout << "666" << endl;
+		}
+		if (score > 650&&score<700)
+			cout << "恭喜您考入北京大学" << endl;
+		if (score > 620&&score<650)
+			cout << "恭喜您考入中国人民大学" << endl;
+		cout << "恭喜您考入一本大学" << endl;
 
+	 }
+	if (score > 500 && score < 600)
+	{
+		cout << "恭喜您考入二本大学" << endl;
+	}
+	if (score > 400 && score < 500)
+	{
+		cout << "恭喜您考入三本大学" << endl;
+	}
+	else
+		cout << "很遗憾，您未能考上大学" << endl;
+	return 0;
+}
 
 
 
