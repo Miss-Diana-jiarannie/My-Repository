@@ -257,7 +257,66 @@ int main()
 	 }
 	 return 0；
 }
-
+电影打分（switch）
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a = 0;
+	cout << " 请为电影<<东百往事>>打分： " << endl;
+	cin >> a; 
+	switch(a)
+	{
+		case 10:
+		case 9:
+			cout << "您认为这个电影是经典佳作。" << endl;
+		break;
+		case 8:
+		case 7:
+		case 6: 
+			cout << "您认为这个电影很不错。" << endl;
+		break;
+		default:
+		    cout << "您认为这是一部烂片。" << endl;
+		    break;
+	}
+	return 0;
+}
+考试分级
+#include<iostream>
+using namespace std;
+int main()
+{
+       int score;
+       cout << "请输入考试分数： "  << endl;
+       cin >> score;
+       switch(score/10)
+       {
+       	case 10:case 9:
+       		cout << "您的分数等级为A。" << endl;break;
+       	case 8:case 7:
+		   cout << "您的分数等级为B。" << endl;break;
+		case 6:
+		  cout << "您的分数等级为C。"  << endl;break;
+		  default:
+		  cout << "您的分数等级为D." << endl;break;	
+	   }
+	return 0;
+}
+求和1+3+5+L+99
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num = 1,sum = 0;
+	while(num < 100)
+	{
+		sum = sum + num;
+		++num,++num;
+	}
+	cout << sum << endl;	
+	return 0;
+}
 
 
 
