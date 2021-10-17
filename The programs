@@ -317,6 +317,42 @@ int main()
 	cout << sum << endl;	
 	return 0;
 }
-
-
-
+猜数游戏
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+int main()
+{
+	int num;
+	int val;
+	int c;
+	srand((unsigned int)time(NULL));
+	num = rand()%100+1; 
+	cout << "请猜一个数： " << endl; 
+	while(val != num&&c <= 5)
+	{
+		cin >> val;
+		if(val > num&&c < 5)
+		{
+			cout << "您猜测的过大。" << endl;
+		}
+		else if(val < num&&c < 5)
+		{
+			cout << "您猜测的过小" << endl; 
+		}
+		else if(val = num&&c < 5) 
+			cout << "恭喜您猜对了" << endl;
+	
+		c = ++c;
+		if(c <= 5)
+		{
+			cout << "您还有" << 5-c << "次机会" << endl;
+		}
+		if(c > 5)
+		{
+			cout << "您失败了" << endl;
+		}
+}	
+	return 0;
+}
