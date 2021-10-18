@@ -399,3 +399,34 @@ int main()
 	
 	return 0;
 }
+算邮费
+#include<iostream>
+using namespace std;
+int main()
+{
+	double a,b,c,wei;
+	cout << "enter your percel's longth, height in meter,and weight in kilogram: " << endl;
+	cin >> a >> b >> c >> wei;
+	if(a>1||b>1||c>1||wei>30)
+	{
+		cout << "No" << endl;
+	}
+	else
+	{
+		if(wei<=10)
+		{
+			cout << wei*0.8+0.2 << endl;
+		}
+		else if(wei<=20)
+		{
+			cout << wei*0.75+0.2 << endl;
+		}
+		else if(wei<30)
+		{
+			cout << wei*0.7+0.2 << endl;
+		}
+		else
+		     cout << "No" << endl;
+	}	
+	return 0;
+}
