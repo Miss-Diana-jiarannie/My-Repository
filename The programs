@@ -430,3 +430,31 @@ int main()
 	}	
 	return 0;
 }
+辗转相除求余数
+#include<iostream>
+using namespace std;
+int main()
+{
+       int m,n,r;
+	   cout << "请输入被除数和除数： " << endl;
+	   cin >> m >> n;
+	   r = m % n;
+	   while(1)
+	   {
+	   	if(r == 0)
+	   	{
+	   		cout << "两个数的最大公约数是" << n << endl;
+	   		break;
+		}
+	   	else if(r != 0)
+	   	{
+	   		m = n;
+	   		n = r;
+	   		r = m % n;
+		}
+	   } 
+}
+		  
+	
+	
+	
