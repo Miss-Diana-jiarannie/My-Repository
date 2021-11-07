@@ -482,5 +482,127 @@ int main()
 		}		
 	return 0;
  } 	
+ 五种麦克劳林公式
+ #include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+	/*e^x的麦克劳林展开式 
+	double i,sum = 0,x,mi,jie = 1;
+	cout << "请输入x";
+	cin >> x;
+	for(i = 0;i <= 100;i++)//循环100次 
+	{
+		if(i == 0) 
+		{
+			sum += 1;
+		}					//求第一项 
+		else
+		{
+			mi = x * x;
+			jie = jie * i;
+			sum = sum + mi/jie;
+		}					//每加一次循环分子多成一个x，分母阶乘升1 
+	}
+	cout <<"e^x=" <<sum << endl;*/
+	
+	/*sin(x)的麦克劳林公式 
+	int i,sign = -1;
+	double sum = 0,x,zi,mu = 1;
+	cout << "please enter x: ";
+	cin >> x;
+	zi = x;
+	for(i = 1; i <= 200;i+=2) 
+	{
+		if(i == 1)
+		{
+			sum = sum + x;
+		}
+		else
+		{
+			zi *= x * x;
+			mu = mu * i*(i - 1);
+			sum = sum + zi/mu*sign;
+			sign = -sign;
+			
+		}
+		
+		
+	}
+	cout << "sin(x)=" << sum << endl;*/
+	
+	/*cos(x)的麦克劳林公式 
+	int i,sign = -1;
+	double sum = 0,x,zi = 1,mu = 1;
+	cout << "please enter x: ";
+	cin >> x;
+	for(i = 1;i <= 200;i+=2)
+	{
+		if(i == 1)
+		{
+			sum+=1;
+		}
+		else
+		{
+			zi*=x*x;
+			mu = mu * (i - 2) * (i - 1);
+			sum+=zi/mu*sign;
+			sign = -sign;
+		}
+		
+	 } 
+	cout << "cos(x)=" << sum << endl;*/
+	
+	/*in(1+x)的麦克劳林公式 
+   	int sign = -1;
+	 double x,sum = 0,zi,mu;
+	 cout << "please enter x: ";
+	cin >> x;
+	zi = x;
+	for(int i = 1;i <= 200;i++)
+	{
+		if(i != 1)
+		{
+			zi*=x;
+			mu = i;
+			sum+=zi/mu*sign;
+			sign = -sign;
+			
+		}
+		else
+		{
+			sum+=x;
+		}
+	}
+	cout << "ln(1+x)=" << sum << endl;*/
+	
+	/*(1+x)^a的麦克劳林公式 
+	double sum = 0,x,zi1,zi2,mu = 1,a;
+	cout << "please enter x and a for (1+x)^a: ";
+	cin >> x >> a;
+	zi1 = a,zi2 = x;
+	for(int i = 1;i <= 200;i++)
+	{
+		if(i == 1)
+		{
+			sum = 1;
+		}
+		else if(i == 2)
+		{
+			sum+=a*x;
+		}
+		else
+		{
+			zi1 *= a-1;
+			a--;
+			zi2*=x;
+			mu *= i-1;
+			sum+=zi1*zi2/mu;
+		}
+	}
+		cout << "(1+x)^a=" << sum << endl;*/	
+	return 0;
+}
 	
 	
